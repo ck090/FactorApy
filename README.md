@@ -1,3 +1,2 @@
 # FactorApy
----
-A Factor analysis library in Python
+A Python package to for performing Factor analysis on any given data.

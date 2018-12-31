@@ -1,16 +1,19 @@
-import __init__ as init
+import os, sys
+CURRENT_DIR = os.path.dirname(os.path.abspath("main.py"))
+sys.path.append(os.path.dirname(CURRENT_DIR))
+import main as m
 import pandas as pd
 
-df = pd.read_csv("examples/testbook.csv")
+df = pd.read_csv("testbook.csv")
 
-fatest = init.FA_Tests()
+fatest = m.FA_Tests()
 kmo_score = fatest.KMO(df) ## Finding out the KMO score
 print(kmo_score) 
 
 c, d, k, p = fatest.BToS(df) ## Fiding out Bartlett's test values
 print(c, d, k, p)
 
-fa = init.FA()
+fa = m.FA()
 eigenvals, eigenvectors = fa.Eigens(df)
 print(eigenvals, "\n", eigenvectors) ## Getting eigen values and eigen vectors
 
