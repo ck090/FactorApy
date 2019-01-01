@@ -11,27 +11,19 @@ def requirements():
     reqs = reqs.split("\n")
     return reqs[:-1]
 
-setup(
-    name="factorapy",
-    version="0.0.1",
-    description="A Python package to for performing Factor analysis on any given data.",
-    long_description=readme(),
-    long_description_content_type="text/markdown",
-    url="https://github.com/ck090/FactorApy",
-    author="Chandra Kanth N",
-    author_email="canfindck@gmail.com",
-    license="MIT",
-    classifiers=[
+setup(name='fa-py',
+      version='0.2',
+      description='A Python package to for performing Factor analysis on any given data.',
+      long_description=readme(),
+      url='https://github.com/ck090/FactorApy',
+      author='Chandra Kanth N',
+      author_email='canfindck@gmail.com',
+      license='MIT',
+      packages=['fa_py'],
+      classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
-    ],
-    packages=["src"],
-    include_package_data=True,
-    install_requires=requirements(),
-    entry_points={
-        "console_scripts": [
-            "weather-reporter=weather_reporter.cli:main",
-        ]
-    },
-)
+      ],
+      install_requires=requirements(),
+      zip_safe=False)
