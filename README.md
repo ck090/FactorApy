@@ -1,6 +1,6 @@
 # FactorApy
 A Python package to for performing Factor analysis on any given data. <br>
-<a href="https://pypi.org/project/fa-py/"><img alt="PyPI" src="https://img.shields.io/pypi/v/fa-py?style=for-the-badge"></a>
+<a href="https://pypi.org/project/fa-py/" target="_blank"><img alt="PyPI" src="https://img.shields.io/pypi/v/fa-py?style=for-the-badge"></a>
 
 ## Installation
 
